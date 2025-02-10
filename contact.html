@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggregate Company - Dodoma</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar with Logo -->
+    <nav class="bg-blue-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="assets/logo.png" alt="Aggregate Co. Logo" class="h-10">
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="services.html" class="hover:underline">Services</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Contact Section -->
+    <main class="container mx-auto p-6">
+        <h2 class="text-xl font-semibold mb-4 text-center text-gray-700">We’d Love to Hear From You</h2>
+        <p class="text-center text-gray-500 mb-6">Fill out the form or visit our office in Dodoma.</p>
+
+        <!-- Flex container for Form & Map -->
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+            
+            <!-- Contact Form -->
+            <form id="feedbackForm" class="flex-1 bg-white p-6 rounded-lg shadow-md h-[400px] flex flex-col justify-center border border-gray-200 transition-all hover:shadow-xl">
+                <label class="block mb-2 font-medium text-gray-700">Name:</label>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 transition-all" id="name" required>
+
+                <label class="block mt-4 mb-2 font-medium text-gray-700">Email:</label>
+                <input type="email" class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 transition-all" id="email" required>
+
+                <label class="block mt-4 mb-2 font-medium text-gray-700">Message:</label>
+                <textarea class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 transition-all" id="message" rows="4" required></textarea>
+
+                <button type="submit" class="mt-4 bg-blue-600 text-white py-3 px-5 rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105">
+                    Send Feedback
+                </button>
+            </form>
+
+            <!-- Google Map -->
+            <div class="flex-1 h-[400px] rounded-lg overflow-hidden shadow-md border-2 border-gray-200 transition-all hover:shadow-xl">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31561.764341167927!2d35.7465123!3d-6.1729935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1857cc6a5a5f5d33%3A0x1e46bdf51c56bdb!2sDodoma%2C%20Tanzania!5e0!3m2!1sen!2s!4v1707292720302!5m2!1sen!2s" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 Aggregate Co. Dodoma. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

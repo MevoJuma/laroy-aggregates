@@ -16,20 +16,33 @@
             <img src="assets/logo.png" alt="Aggregate Co. Logo" class="h-10">
             <ul class="flex space-x-6">
                 <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="#" class="hover:underline">About</a></li>
-                <li><a href="#" class="hover:underline">Services</a></li>
-                <li><a href="#" class="hover:underline">Contact</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="services.html" class="hover:underline">Services</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
             </ul>
         </div>
     </nav>
 
 
     <!-- Hero Section with Background Image -->
-    <header class="bg-cover bg-center text-white text-center py-20" style="background-image: url('assets/hero-bg.jpg');">
-        <h2 class="text-4xl font-bold">Quality Aggregate Products in Dodoma</h2>
-        <p class="mt-4 text-lg">Supplying high-quality sand, gravel, and construction materials.</p>
-        <a href="contact.html" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Get in Touch</a>
+    <header class="relative w-full h-screen flex flex-col items-center justify-center text-white text-center" style="background-image: url('assets/hero00.jpg'); background-size: cover; background-position: center;">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 px-6 md:px-12">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+                Quality Aggregate Products in Dodoma
+            </h1>
+            <p class="mt-4 text-lg md:text-xl drop-shadow-lg">
+                Supplying high-quality sand, gravel, and construction materials.
+            </p>
+            <a href="contact.html" class="mt-6 inline-block bg-blue-500 text-white px-8 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-blue-600 transform hover:scale-105 transition-all">
+                Get in Touch
+            </a>
+        </div>
     </header>
+
 
     <!-- Services Section -->
     <section class="container mx-auto p-8">
